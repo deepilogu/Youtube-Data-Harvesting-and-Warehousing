@@ -34,7 +34,7 @@ import re
 api_service_name = "youtube"
 api_version = "v3"
 youtube = googleapiclient.discovery.build(
-        api_service_name, api_version, developerKey="AIzaSyARIkdnWkrDg1FtGTP6JBibCDXitn5xAnY")
+        api_service_name, api_version, developerKey="YOUR_API_KEY")
 
 #---------------------------------------------- MongoDB Connection ----------------------------------------------
 
@@ -198,8 +198,8 @@ def connect_to_mysql():
     try:
         conn= mysql.connector.connect(
                             host = "localhost",
-                            username = "root",
-                            password = "mysql12345;"
+                            username = "YOUR_USERNAME",
+                            password = "YOUR_PASSWORD"
         )
     except mysql.connector.Error as err:
         print(f"Error: {err}")
